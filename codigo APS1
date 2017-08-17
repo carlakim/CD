@@ -1,0 +1,10 @@
+%matplotlib inline
+import pandas as pd
+import matplotlib.pyplot as plt
+import os
+
+dados = pd.read_csv('DOM2015.csv', sep=',')
+
+df = pd.DataFrame({'V4105' : dados.V4105,'V0201': dados.V0201,'V02270': dados.V02270, 'V02272': dados.V02272, 'V02326': dados.V02326})
+
+df
